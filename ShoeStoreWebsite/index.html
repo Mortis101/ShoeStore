@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store Website</title>
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="hero-img">
+
+    </div>
+  <div class="wrapper">
+    <header>
+        <a href="#" class="logo">Shoe<span>Brand</span></a>
+         
+        <nav>
+        <ul>
+            <svg class="close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet" viewBox="-2 -2 24 24"><path fill="currentColor" d="m11.414 10l2.829-2.828a1 1 0 1 0-1.415-1.415L10 8.586L7.172 5.757a1 1 0 0 0-1.415 1.415L8.586 10l-2.829 2.828a1 1 0 0 0 1.415 1.415L10 11.414l2.828 2.829a1 1 0 0 0 1.415-1.415L11.414 10zM10 20C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10s-4.477 10-10 10z"/></svg>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sneakers</a></li>
+            <li><a href="#">Players</a></li>
+        </ul>
+        </nav>
+        <svg class="menu" width="48" height="32" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
+            </svg>
+    </header>
+    <section class="hero">
+        <h1>Regain your confidence on the court. </h1>
+         <p class="subhead">A Shoe built with purpose and to take your game to the next level.</p>
+       
+         <svg class="down-arrow" width="16" height="132" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z" fill="black"/>
+            </svg> 
+    </section>
+
+    <section class="more-info">
+       <div class="feature">
+          <div class="content">
+            <p class="tittle">Lightweight</p>
+            <p class="desc"> Upper mesh material provides poper ventilation and reduction in the weight of the shoe. </p>
+          </div>
+            <img src="/css/images/yellowshoe.jpg" alt="Yellow Nike Shoe.">
+       </div>
+       <div class="feature left">
+        <div class="content">
+          <p class="tittle">Lightweight</p>
+          <p class="desc"> Upper mesh material provides poper ventilation and reduction in the weight of the shoe. </p>
+        </div>
+          <img src="/css/images/browredshoe.jpg" alt="Yellow Nike Shoe.">
+     </div>
+     <div class="feature">
+        <div class="content">
+          <p class="tittle">Lightweight</p>
+          <p class="desc"> Upper mesh material provides poper ventilation and reduction in the weight of the shoe. </p>
+        </div>
+          <img src="/css/images/blackshoe.jpg" alt="Yellow Nike Shoe.">
+     </div>
+   </section>
+  </div>
+  <script>
+    const menu = document.querySelector('.menu')
+    const close = document.querySelector('.close')
+    const nav = document.querySelector('nav')
+
+    menu.addEventListener('click', () => {
+      
+        nav.classList.add('open-nav')
+      
+
+    })
+
+    close.addEventListener('click', () => {
+      
+      nav.classList.remove('open-nav')
+    
+
+  })
+
+  </script>
+</body>
+</html>
